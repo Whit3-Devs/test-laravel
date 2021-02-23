@@ -1,0 +1,199 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2376AC;
+}
+
+/*----- Company´s Presentation -----*/
+.container-presentation {
+  background-color: #2376AC;
+  min-height: 100%;
+  width: 100%;
+}
+
+/*----- Nav-Bar -----*/
+.container-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 90px;
+  min-width: 100%;
+  padding: 5px 25px;
+}
+
+.nav-pages {
+  list-style: none;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+  .nav-pages li:first-child {
+      margin-right: 15px;
+  }
+      .nav-pages li a {
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 20px;
+          letter-spacing: 2px;
+          color: #bdbdbd;
+          padding: 0px 5px;
+
+      }
+      .nav-pages li a:hover {
+          transition: 0.5s;
+          color: #fafafa;
+      }
+
+.container-loginRegister {
+  min-width: 100%;
+  min-height: 400px;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-loginRegister h1 {
+  font-weight: 300;
+}
+
+.input-username {
+  margin: 10px 0;
+}
+
+.input-username input {
+  padding: 15px 150px;
+  border-radius: 50px;
+}
+
+.input-password {
+  margin: 10px 0;
+}
+
+.input-password input {
+  padding: 15px 150px;
+  border-radius: 50px;
+}
+
+.forgot-password {
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-self: center;
+}
+
+.forgot-password a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  transition: 0.7s;
+  color: #FF4530;
+}
+
+.btn-login {
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-self: center;
+}
+
+.btn-login button {
+  color: #fafafa;
+  background-color: #FF4530;
+  padding: 15px 215px;
+  border-radius: 50px;
+}
+
+.register-now  {
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-self: center;
+}
+
+.register-now a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.register-now a:hover {
+  transition: 0.7s;
+  color: #FF4530;
+}
+
+.input-fullname {
+  margin: 10px 0;
+}
+
+.input-fullname input {
+  padding: 15px 150px;
+  border-radius: 50px;
+}
+
+.input-email {
+  margin: 10px 0;
+}
+
+.input-email input {
+  padding: 15px 150px;
+  border-radius: 50px;
+}
+
+.input-confirmpassword {
+  margin: 10px 0;
+}
+
+.input-confirmpassword input {
+  padding: 15px 150px;
+  border-radius: 50px;
+}
+
+.btn-register {
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-self: center;
+}
+
+.btn-register button {
+  color: #fafafa;
+  background-color: #FF4530;
+  padding: 15px 215px;
+  border-radius: 50px;
+}
+
+.have-account  {
+
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-self: center;
+}
+
+.have-account a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.have-account a:hover {
+  transition: 0.7s;
+  color: #FF4530;
+}

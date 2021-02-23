@@ -1,0 +1,339 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*----- Company´s Presentation -----*/
+.container-presentation {
+    min-height: 600px;
+    width: 100%;
+}
+
+/*----- Nav-Bar -----*/
+.container-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 90px;
+    min-width: 100%;
+    padding: 5px 25px;
+}
+
+.nav-pages {
+    list-style: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+    .nav-pages li:first-child {
+        margin-right: 15px;
+    }
+        .nav-pages li a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            color: #bdbdbd;
+            padding: 0px 5px;
+
+        }
+        .nav-pages li a:hover {
+            transition: 0.5s;
+            color: #fafafa;
+        }
+/*----- End Nav-Bar -----*/
+
+/*----- Introduction -----*/
+.intro-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 510px;
+    color: #fafafa;
+}
+    .intro-body h1{
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 45px;
+        letter-spacing: 2px;
+        margin-top: -120px;
+    }
+    .intro-body h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+/*----- Stack Technologies -----*/
+.container-stackTechnologies {
+    min-height: 600px;
+    min-width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F5F7F9;
+
+}
+/*----- Btn Filters -----*/
+    .container-filterCards {
+        margin-top: 50px;
+
+        min-width: 90%;
+        min-height: 100%;
+
+        background-color: #F5F7F9;
+    }
+        .filter-cards {
+            list-style: none;
+
+            display: flex;
+            flex-grow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+            .filter-cards li {
+                width: 33%;
+                height: 38px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+                .filter-cards li .filter-link {
+                    text-decoration: none;
+                    line-height: 35px;
+                    min-width: 100%;
+                    height: 100%;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 13px;
+                    border-radius: 5px;
+                }
+                .filter-cards li .filter-link:visited {
+
+                    color: #333;
+                }
+                .filter-cards li .hover:hover {
+                    transition: 0.6s;
+                    color: #FF4530;
+                    background-color: #EEEEEE;
+                }
+                .active {
+                    transition: 0.9s;
+                    color: #fafafa !important;
+                    background-color: #FF4530;
+                }
+
+    /*----- Cards -----*/
+    .container-cards {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+    }
+        .card {
+            min-width: 22.5%;
+            min-height: 400px;
+            max-height: 400px;
+            border-radius: 10px 10px 5px 5px;
+            margin: 10px 0;
+            box-shadow: 2px 2px 9px 0px rgba(119,119,119,0.47);
+        }
+        .card:hover {
+            transition: 0.7s;
+            box-shadow: 2px 2px 40px -3px rgba(102,102,102,1);
+        }
+            .card-image {
+                z-index: 25;
+                position: relative;
+                height: 320px;
+                border-radius: 10px 10px 0 0;
+            }
+                .card-links {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 100%;
+
+                    z-index: 150;
+                    position: absolute;
+                    bottom: 15px;
+
+                }
+                    .links {
+                        min-width: 30px;
+                        min-height: 30px;
+                        margin: 5px 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        border-radius: 2px;
+                    }
+                        .svg-image {
+                            padding: 12px;
+                            height: 17px;
+                            width: 17px;
+                            border-radius: 3px;
+                        }
+                            .opacity {
+                                transition: 0.7s;
+                                background-color: rgba(51, 51, 51, 0);
+                            }
+                            .opacity-transition {
+                                transition: 0.7s;
+                                background-color: rgba(51, 51, 51, 0.5);
+                            }
+                            .opacidad {
+                                opacity: 1;
+                            }
+                        .svg-image:hover {
+                            transition: 0.7s;
+                            background-color: rgba(51, 51, 51, 1);
+                        }
+        .card-info {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+            .title-technology {
+                margin: 10px 0;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 1px;
+
+            }
+            .title-category {
+                color: #FF4530;
+                margin: 5px 0;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: 1px;
+            }
+
+/*----- Company´s Pitch -----*/
+.container-pitch {
+    min-height: 190px;
+    min-width: 100%;
+    padding: 50px 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+    .container-pitch h1 {
+        color: #fafafa;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 45px;
+    }
+    .container-pitch h5 {
+        color: #fafafa;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    .btn-unete {
+        text-decoration: none;
+        color: #fafafa;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 16px;
+        /*background-color: #d1d1d1;*/
+        background-color: #FF4530;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 6px 0 #EE3135;
+    }
+    .btn-unete:hover {
+        box-shadow: 0px 4px 0 #EE3135;
+    }
+
+/*----- Company´s Footer -----*/
+.container-footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 150px;
+
+    padding: 30px 0;
+
+}
+    .container-copyright {
+        width: 160px;
+        height: 100px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+        .container-copyright p{
+
+            color: #BBC0C4;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 17px;
+        }
+    .container-footerPages {
+        align-self: center;
+    }
+    .container-footerPages a{
+        text-decoration: none;
+        color: #BBC0C4;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 17px;
+    }
+    .container-footerButtons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        .container-footerButtons a {
+            margin: 5px 10px;
+            border: 1px solid #BBC0C4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+            .container-footerButtons a .footer-svgImage {
+                width: 20px;
+                height: 20px;
+            }
